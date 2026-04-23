@@ -48,8 +48,9 @@ header {
   top: 0;
   width: 100%;
   background: transparent;
-  backdrop-filter: blur(10px);
   z-index: 1000;
+  background: rgba(15, 15, 26, 0.6); 
+  backdrop-filter: blur(10px);
 }
 
 nav ul {
@@ -459,47 +460,122 @@ footer {
 /* responsiviades */
 
 
-
 /* tablet */
 
+/* tablet */
 @media (max-width: 1024px) {
-  section { padding: 70px 6%; }
-  #home { padding-left: 6%; }
-  .home-texto h1 { font-size: 36px; }
-  .home-texto h2 { font-size: 18px; }
-  p { font-size: 16px; }
-  .servicos-grid { grid-template-columns: 1fr 1fr; }
-  .projetos-grid { grid-template-columns: repeat(2, 1fr); }
+  html,
+  body {
+    overflow-x: clip;
+    max-width: 100vw;
+  }
+
+  section {
+    padding: 70px 6%;
+  }
+
+  #home {
+    padding-left: 6%;
+  }
+
+  .home-texto {
+    min-width: 0;
+  }
+
+  .home-texto h1 {
+    font-size: 36px;
+  }
+
+  .home-texto h2 {
+    font-size: 18px;
+  }
+
+  #digitando {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .servicos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projetos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .lang-buttons {
+    margin-left: 0;
+    justify-content: center;
+  }
 }
 
 /* celular */
-
-
 @media (max-width: 768px) {
-  section { padding: 60px 20px; }
+  html,
+  body {
+    overflow-x: clip;
+    max-width: 100vw;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
 
   #home {
     padding-left: 0;
+    padding-top: 160px;
     justify-content: center;
     text-align: center;
   }
 
-  .home-texto h1 { font-size: 26px; }
-  .home-texto h2 { font-size: 16px; }
-  p { font-size: 15px; }
+  .home-texto {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .home-texto h1 {
+    font-size: 26px;
+  }
+
+  .home-texto h2 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 15px;
+  }
 
   #digitando {
+    display: block;
+    width: 100%;
     max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+    text-align: center;
     font-size: 13px;
   }
 
-  nav ul {
-    gap: 10px;
-    flex-wrap: wrap;
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .servicos-grid { grid-template-columns: 1fr; }
-  .projetos-grid { grid-template-columns: 1fr; }
+  nav ul {
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+  }
 
   .lang-buttons {
     justify-content: center;
@@ -507,12 +583,15 @@ footer {
     margin-left: 0;
   }
 
-  nav {
-    flex-direction: column;
-    align-items: center;
+  .servicos-grid {
+    grid-template-columns: 1fr;
   }
 
-  #home {
-    padding-top: 160px;
+  .projetos-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .botoes {
+    flex-direction: column;
   }
 }
