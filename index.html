@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Isabela | Portfólio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<canvas id="particles"></canvas>
+<div class="mouse-glow"></div>
+
+<header>
+
+
+<!-- nav -->
+
+
+<nav>
+<ul>
+<li><a href="#home" data-i18n="nav.home">Home</a></li>
+<li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+<li><a href="#servicos" data-i18n="nav.services">Serviços</a></li>
+<li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+<li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+</ul>
+
+<!-- botões do idioma -->
+
+
+<div class="lang-buttons">
+  <button onclick="mudarIdioma('pt')">PT</button>
+  <button onclick="mudarIdioma('en')">EN</button>
+  <button onclick="mudarIdioma('es')">ES</button>
+</div>
+
+</nav>
+</header>
+
+
+<!-- apresentação inicial -->
+
+
+<section id="home">
+
+<div class="home-texto">
+
+<div class="status-badge">
+  <span class="dot"></span>
+  <span data-i18n="home.status">Disponível para projetos</span>
+</div>
+
+<h1 class="hidden delay-1" data-i18n="home.title">Isabela Rodrigues</h1>
+
+<h2 id="digitando" class="hidden delay-2"></h2>
+
+<p class="hidden delay-3" data-i18n="home.desc">
+Aprendendo, construindo e evoluindo na tecnologia.
+</p>
+
+<button class="hidden delay-3" onclick="irParaProjetos()" data-i18n="home.button">
+Ver projetos
+</button>
+
+</div>
+
+</section>
+
+<!-- sobre  -->
+
+
+<section id="sobre" class="sobre hidden">
+
+  <h2 data-i18n="about.title">Sobre mim</h2>
+<br>
+
+  <div class="sobre-container">
+
+    <p data-i18n="about.p1">
+      Sou estudante de Sistemas de Informação e tenho interesse na área de tecnologia desde cedo.
+    </p>
+
+    <p data-i18n="about.p2">
+      Tenho experiência com HTML, CSS e JavaScript, além de conhecimentos em Python, C e Java. Também já tive contato com banco de dados, trabalhando com SQL, modelagem e manipulação de informações.
+    </p>
+
+    <p data-i18n="about.p3">
+      Gosto de aprender na prática, desenvolvendo projetos próprios e buscando evoluir continuamente minhas habilidades técnicas e minha forma de resolver problemas. Tenho facilidade para trabalhar em equipe e estou sempre aberta a novos desafios e oportunidades na área.
+    </p>
+
+    <p data-i18n="about.p4">
+      Atualmente, estou em busca de oportunidades para aplicar meus conhecimentos na prática e continuar evoluindo.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- servicos -->
+
+
+<section id="servicos" class="hidden">
+
+  <h2 data-i18n="services.title">Serviços</h2>
+
+  <div class="servicos-grid">
+
+    <div class="servico">
+      <h3 data-i18n="services.s1.title">Sistemas e Automação</h3>
+      <p data-i18n="services.s1.desc">
+        Desenvolvimento de sistemas para automatizar processos e organizar dados, utilizando lógica de programação com Python, C e Java.
+      </p>
+    </div>
+
+    <div class="servico">
+      <h3 data-i18n="services.s2.title">Desenvolvimento Web</h3>
+      <p data-i18n="services.s2.desc">
+        Desenvolvo sites e aplicações web responsivas usando HTML, CSS e JavaScript, focando em interatividade e usabilidade.
+      </p>
+    </div>
+
+    <div class="servico">
+      <h3 data-i18n="services.s3.title">Banco de Dados</h3>
+      <p data-i18n="services.s3.desc">
+        Organização e manipulação de dados utilizando SQL, incluindo modelagem e consultas.
+      </p>
+    </div>
+
+    <div class="servico">
+      <h3 data-i18n="services.s4.title">Interface (UI/UX)</h3>
+      <p data-i18n="services.s4.desc">
+        Criação de interfaces organizadas e intuitivas, com foco na experiência do usuário, utilizando ferramentas como Figma.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- projetos -->
+
+
+
+<section id="projetos" class="hidden">
+
+  <h2 data-i18n="projects.title">Projetos</h2>
+
+  <div class="projetos-grid">
+
+    <div class="projeto-card">
+      <img src="img/Site Pizzaria.gif" alt="Projeto Pizzaria">
+
+      <h3 data-i18n="projects.p1.title">Site de Pizzaria Interativo</h3>
+      <p data-i18n="projects.p1.desc">Site responsivo com interface moderna e interativa para simulação de pedidos online.</p>
+
+      <div class="botoes">
+        <a href="https://isabelardg.github.io/Pizzaria-Maribella/index.html" target="_blank" data-i18n="projects.view">Ver projeto</a>
+        <a href="https://github.com/Isabelardg/Pizzaria-Maribella" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projeto-card">
+      <img src="img/Sistema Automacao Python.png" alt="Sistema em Python">
+
+      <h3 data-i18n="projects.p2.title">Automação de Dados e Produtos</h3>
+      <p data-i18n="projects.p2.desc">Automação para leitura, validação e organização de dados de produtos, gerando saída estruturada em JSON.</p>
+
+      <div class="botoes">
+        <a href="https://github.com/Isabelardg/Importador-Produtos" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projeto-card">
+      <img src="img/Jogo do Mario.gif" alt="Jogo do Mario">
+
+      <h3 data-i18n="projects.p3.title">Jogo do Mario Interativo</h3>
+      <p data-i18n="projects.p3.desc">Jogo com movimentação e lógica de eventos desenvolvido em JavaScript.</p>
+
+      <div class="botoes">
+        <a href="https://isabelardg.github.io/Jogo-Mario/" target="_blank" data-i18n="projects.view">Ver projeto</a>
+        <a href="https://github.com/Isabelardg/Jogo-Mario" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ver-todos">
+    <a href="https://github.com/Isabelardg?tab=repositories" data-i18n="projects.all">Ver mais projetos no GitHub</a>
+  </div>
+</section>
+
+
+<!-- contato -->
+
+
+
+<section id="contato" class="hidden">
+
+  <h2 data-i18n="contact.title">Contato</h2>
+
+  <p class="contato-texto" data-i18n="contact.text">
+    Me envie uma mensagem e vamos conversar :)
+  </p>
+
+<form class="form-contato" id="form-contato">
+
+  <input type="text" name="nome" placeholder="Seu nome" data-i18n-placeholder="contact.name" required>
+  
+  <input type="email" name="email" placeholder="Seu email" data-i18n-placeholder="contact.email" required>
+  
+  <textarea name="mensagem" placeholder="Sua mensagem" data-i18n-placeholder="contact.message" required></textarea>
+  
+  <button type="submit" data-i18n="contact.button">Enviar por Email</button>
+  <p id="status-email" class="status-email"></p>
+
+</form>
+
+<a href="https://wa.me/5521988020182" target="_blank" class="btn-whatsapp" data-i18n="contact.whatsapp">
+Ou fale comigo pelo WhatsApp
+</a>
+
+</section>
+
+
+
+<!-- footer -->
+
+
+
+<footer>
+
+  <div class="footer-icons">
+    
+    <a href="https://www.linkedin.com/in/isabela-rodrigues-silva/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/Isabelardg" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=isabelarodriguessilva05@gmail.com" target="_blank">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+
+  <p class="footer-copy" data-i18n="footer">
+    © 2026 Isabela Rodrigues - Todos os direitos reservados
+  </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
