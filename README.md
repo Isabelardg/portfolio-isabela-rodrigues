@@ -7,7 +7,7 @@
 ## 🌐 Acesso ao Projeto
 
 - Github pages: https://isabelardg.github.io/portfolio-isabela-rodrigues/
-- Vercel:
+- Vercel: https://portfolio-isabela-rodrigues.vercel.app/
 
 
 ---
