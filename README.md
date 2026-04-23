@@ -5,10 +5,10 @@
 ---
 
 ## 🌐 Acesso ao Projeto
-```plaintext
-Github pages: https://isabelardg.github.io/portfolio-isabela-rodrigues/
-Vercel:
-```
+
+- Github pages: https://isabelardg.github.io/portfolio-isabela-rodrigues/
+- Vercel:
+
 
 ---
 
